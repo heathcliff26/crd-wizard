@@ -180,4 +180,4 @@ jobs:
             echo "Pull request, skipping push"
             exit 0
           fi
-          helm push "crd-wizard-${VERSION}.tgz" "oci://ghcr.io/${{ github.repository }}-helm" 2>&1 | tee -a helm-push-out.txt
+          helm push "crd-wizard-${VERSION}.tgz" "oci://ghcr.io/${{ github.repository_owner }}/helm-charts" 2>&1 | tee -a helm-push-out.txt
